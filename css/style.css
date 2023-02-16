@@ -1,0 +1,236 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+#grilla1{
+    display: grid;
+    grid-template-areas:
+    "tipo1      tipo1     tipo1   tipo1   tipo1"
+    "tipo2      tipo3     tipo4   tipo5   tipo6"
+    ;
+    grid-template-columns: 10% 15% 15% 28% 10%;
+    grid-template-rows: 150px 440px;
+    padding: 10px;
+    margin: 2px;
+    gap: 1%;
+}
+
+
+
+#grilla1 .logoT{
+    grid-area: tipo1;
+}
+
+#grilla1 .boton{
+    grid-area: tipo2;
+    display: flex;
+    background: rgb(0, 217, 255);
+    border: 2px solid black;
+    height: 100px;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+    padding: 2px;
+    font-family: 'Roboto Mono', monospace;
+    
+}
+
+#grilla1 .visionT{
+    grid-area: tipo3;
+    display: flex;
+    flex-direction: column;
+    height: 434px;
+    width: auto;
+    font-family: 'Roboto Mono', monospace;
+    background: rgba(170, 183, 181, 0.774);
+    border: 2px solid rgb(35, 33, 33);
+    padding: auto;
+    margin: 2px;
+    
+}
+
+#grilla1 .misionT{
+    grid-area: tipo4;
+    display: flex; 
+    flex-direction: column;
+    height: 434px;
+    width: auto;
+    font-family: Arial;
+    background: rgba(170, 183, 181, 0.774);
+    border: 2px solid rgb(35, 33, 33);
+    font-family: 'Roboto Mono', monospace;
+    padding: auto;
+    margin: 2px;
+}
+
+#grilla1 .imagenT{
+    display: flex;
+    grid-area: tipo5;
+    height: 560px;
+    width: 520px;
+    justify-content: center;
+    margin: 5px;
+}
+
+#grilla1 .publicidadT{
+    grid-area: tipo6;
+    padding: 5px;
+    border: 1px solid black;
+    margin: 5px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.texto1{
+    /* texto de mision y vision */
+    background: rgba(231, 117, 117, 0.774);
+    border: 2px solid black;
+    justify-content: center;
+    height: 100px;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.texto2{
+     /* texto de descripcion de producto */
+    background: rgba(170, 183, 181, 0.774);
+    border: 2px solid rgb(35, 33, 33);
+    padding: 5px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.texto3{
+    /* texto de descripcion de footer */
+    font-family: 'Roboto Mono', monospace;
+}
+
+.imagenes1{
+    /* dimensiones de imagen pag principal*/
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 2px;
+    width: 510px;
+    height: 420px;
+    align-items: center;
+}
+
+.imagenes2{
+    /* dimensiones de imagen para productos*/
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    height: 360px;
+}
+
+.trivium{
+    /* dimensiones de imagen logo*/
+    padding: 10px;
+    margin: 10px;
+    width: 150px;
+    height: 60px;   
+}
+
+
+
+
+
+#grilla2{
+    display: grid;
+    grid-template-areas:    
+    "tipo11"
+    "bot2"
+    "tipo33"    
+    "tipo44";
+    grid-template-columns: 100% ;
+    grid-template-rows: 125px 95px 160px 60%;
+}
+
+#grilla2 .logo2{
+    grid-area: tipo11;
+    height: 5px;
+    margin: 5px;
+}
+
+#grilla2 .boton2{
+     /* estilo de pag dove grid*/
+    grid-area: bot2;
+    display: flex;
+    width: 95%;
+    margin: 2px;
+    padding: 2px;
+}
+
+#grilla2 .descripcion{
+    grid-area: tipo33;
+    display: flex;
+    height: 120px;
+    width: 800px;
+    font-family: 'Roboto Mono', monospace;
+    padding: 10px;
+    margin: 10px; 
+}
+
+#grilla2 .imgproducto{
+    grid-area: tipo44;
+    display: flex; 
+    height: 100%;
+}
+
+#grilla2 .listadove{
+    /* estilo de pag dove grid*/
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    width: 120px; 
+    height: 35px;
+    border: 2px solid black;
+    background-color: rgb(137, 189, 132);
+    font-family: 'Roboto Mono', monospace;
+    text-decoration-color: black;
+}
+
+#grilla2 .listamon{
+    /* estilo de pag monange*/
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    width: 120px; 
+    height: 35px;
+    border: 2px solid black;
+    text-decoration-color: black;
+    background-color: rgb(226, 80, 80);
+    font-family: 'Roboto Mono', monospace;
+    text-decoration-color: black;
+}
+
+#grilla2 .listaaxe{
+    /* estilo de pag axe*/
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    width: 120px; 
+    height: 35px;
+    border: 2px solid black;
+    background-color: rgb(65, 65, 136);
+    font-family: 'Roboto Mono', monospace;
+    text-decoration-color: black;
+}
+
+#grilla2 .listarex{
+    /* estilo de pag rexona*/
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    width: 120px; 
+    height: 35px;
+    border: 2px solid black;
+    background-color: rgb(163, 100, 163);
+    font-family: 'Roboto Mono', monospace;
+    text-decoration-color: black;
+}
